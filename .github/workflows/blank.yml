@@ -1,16 +1,18 @@
 # This is a basic workflow to help you get started with Actions
 
+# Workflow 이름
 name: CI
 
-# Controls when the workflow will run
+# 어떤 event 조건으로 workflow를 trigger 할 지에 대해 기술
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
+    branches: [ "main" ] # Event: main branch에 push 하는 경우
   pull_request:
-    branches: [ "main" ]
+    branches: [ "main" ] # Event: main branch에 대해 pull request (merge request) 하는 경우
 
   # Allows you to run this workflow manually from the Actions tab
+  # Manual하게 workflow를 실행 가능하게 함
   workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
